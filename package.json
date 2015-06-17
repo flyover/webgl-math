@@ -1,0 +1,25 @@
+{
+  "name": "webgl-math",
+  "version": "0.0.0",
+  "description": "WebGL Math Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyover/webgl-math.git"
+  },
+  "keywords": [
+    "WebGL",
+    "Math"
+  ],
+  "author": "Flyover Games, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flyover/webgl-math/issues"
+  },
+  "homepage": "https://github.com/flyover/webgl-math",
+  "gypfile": true
+}

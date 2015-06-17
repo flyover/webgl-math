@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CF8C44FAB14D208BE064234D /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4B1DDAA79622EB288498D715 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				32D7922936DB2409C42D8CD3 /* PBXTargetDependency */,
+				6129F9B2B079B982331709CD /* PBXTargetDependency */,
+				73CE8D3CD1D7B82BB13DB888 /* PBXTargetDependency */,
+				7D5FF371CF493CD61CA7A83F /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		208261F6AD0CD466E695CE50 /* vec2.cc in Sources */ = {isa = PBXBuildFile; fileRef = E2086D2A9D897B711F40EBDA /* vec2.cc */; };
+		7D517C26A88F570D260FDC7F /* vec2.cc in Sources */ = {isa = PBXBuildFile; fileRef = E2086D2A9D897B711F40EBDA /* vec2.cc */; };
+		7E6C26DCE379D13E5F33E1F2 /* vec3.cc in Sources */ = {isa = PBXBuildFile; fileRef = B5E96401DB403124CF19F30B /* vec3.cc */; };
+		80D2FC171CA375A1F203570F /* vec3.cc in Sources */ = {isa = PBXBuildFile; fileRef = B5E96401DB403124CF19F30B /* vec3.cc */; };
+		8906B5D27EAC13219F58823A /* vec4.cc in Sources */ = {isa = PBXBuildFile; fileRef = F8EE425E32D204090081A566 /* vec4.cc */; };
+		C3FC44402BEC7BE2E51E9096 /* vec4.cc in Sources */ = {isa = PBXBuildFile; fileRef = F8EE425E32D204090081A566 /* vec4.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23BD63DEE27E76DD72C6E854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95D057C8A3B8FE09EF710266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E9F1D517B2941EB3A122D2;
+			remoteInfo = "libwebgl-math-vec3-osx";
+		};
+		5D59526D609AE097A179E9CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95D057C8A3B8FE09EF710266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA597BA17BEE305CFD1A2298;
+			remoteInfo = "libwebgl-math-osx";
+		};
+		ADC1897DE3C930F09D1BBADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95D057C8A3B8FE09EF710266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A9C10ACBC56FF331A9908D8;
+			remoteInfo = "libwebgl-math-vec2-osx";
+		};
+		E957EF938FBCE97CB7583D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95D057C8A3B8FE09EF710266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB0592515BB910B25A10FE9;
+			remoteInfo = "libwebgl-math-vec4-osx";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EF236E367C03FFA6F8FA2FF /* libwebgl-math-vec4-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libwebgl-math-vec4-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		500FBA3E65CA3EDAC1ADE457 /* webgl-math.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = "webgl-math.gyp"; sourceTree = "<group>"; };
+		712DEF7159DF07CF643AEC42 /* libwebgl-math-vec3-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libwebgl-math-vec3-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F77D997DD2C05B246B3BA4 /* libwebgl-math-vec2-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libwebgl-math-vec2-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDC074D34C32C3D67EB0B35 /* libwebgl-math-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libwebgl-math-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E96401DB403124CF19F30B /* vec3.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vec3.cc; sourceTree = "<group>"; };
+		E2086D2A9D897B711F40EBDA /* vec2.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vec2.cc; sourceTree = "<group>"; };
+		F8EE425E32D204090081A566 /* vec4.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vec4.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180539945E98BFF548EDF1E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1BF6B8B7543D0FC12B6531C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A345493F2BC9C7379C7D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DF5BBF822630900440AA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FD93BCD5F2D487ED6FD49AB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E2086D2A9D897B711F40EBDA /* vec2.cc */,
+				B5E96401DB403124CF19F30B /* vec3.cc */,
+				F8EE425E32D204090081A566 /* vec4.cc */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8AEE95BE6B3C4B73E7EECA30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1F77D997DD2C05B246B3BA4 /* libwebgl-math-vec2-osx.a */,
+				712DEF7159DF07CF643AEC42 /* libwebgl-math-vec3-osx.a */,
+				2EF236E367C03FFA6F8FA2FF /* libwebgl-math-vec4-osx.a */,
+				ABDC074D34C32C3D67EB0B35 /* libwebgl-math-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D9579DB2C744A31B5D9036B = {
+			isa = PBXGroup;
+			children = (
+				2FD93BCD5F2D487ED6FD49AB /* Source */,
+				8AEE95BE6B3C4B73E7EECA30 /* Products */,
+				C4DCACE05CF4DE652E2EA4E5 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		C4DCACE05CF4DE652E2EA4E5 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				500FBA3E65CA3EDAC1ADE457 /* webgl-math.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CB0592515BB910B25A10FE9 /* libwebgl-math-vec4-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 103BA40A5A380EACDD073A8F /* Build configuration list for PBXNativeTarget "libwebgl-math-vec4-osx" */;
+			buildPhases = (
+				325AC822C56FCB364DACB8F4 /* Sources */,
+				C1BF6B8B7543D0FC12B6531C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libwebgl-math-vec4-osx";
+			productName = "webgl-math-vec4-osx";
+			productReference = 2EF236E367C03FFA6F8FA2FF /* libwebgl-math-vec4-osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9A9C10ACBC56FF331A9908D8 /* libwebgl-math-vec2-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8196820FF1E2B817EC8E176 /* Build configuration list for PBXNativeTarget "libwebgl-math-vec2-osx" */;
+			buildPhases = (
+				A22E377866140156B160F514 /* Sources */,
+				D9DF5BBF822630900440AA3C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libwebgl-math-vec2-osx";
+			productName = "webgl-math-vec2-osx";
+			productReference = A1F77D997DD2C05B246B3BA4 /* libwebgl-math-vec2-osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CA597BA17BEE305CFD1A2298 /* libwebgl-math-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FE0748FE640A5612D2465F /* Build configuration list for PBXNativeTarget "libwebgl-math-osx" */;
+			buildPhases = (
+				3266C8B2F99DE8A208B10221 /* Sources */,
+				D5A345493F2BC9C7379C7D37 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libwebgl-math-osx";
+			productName = "webgl-math-osx";
+			productReference = ABDC074D34C32C3D67EB0B35 /* libwebgl-math-osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D1E9F1D517B2941EB3A122D2 /* libwebgl-math-vec3-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A469FCA4B695B4A7B1A3AC /* Build configuration list for PBXNativeTarget "libwebgl-math-vec3-osx" */;
+			buildPhases = (
+				C739D52B9A3FF4C352749AFA /* Sources */,
+				180539945E98BFF548EDF1E1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libwebgl-math-vec3-osx";
+			productName = "webgl-math-vec3-osx";
+			productReference = 712DEF7159DF07CF643AEC42 /* libwebgl-math-vec3-osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95D057C8A3B8FE09EF710266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 63B8BB4FC18AB11BC50B7184 /* Build configuration list for PBXProject "webgl-math" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 8D9579DB2C744A31B5D9036B;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				CF8C44FAB14D208BE064234D /* All */,
+				9A9C10ACBC56FF331A9908D8 /* libwebgl-math-vec2-osx */,
+				D1E9F1D517B2941EB3A122D2 /* libwebgl-math-vec3-osx */,
+				3CB0592515BB910B25A10FE9 /* libwebgl-math-vec4-osx */,
+				CA597BA17BEE305CFD1A2298 /* libwebgl-math-osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		325AC822C56FCB364DACB8F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8906B5D27EAC13219F58823A /* vec4.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3266C8B2F99DE8A208B10221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208261F6AD0CD466E695CE50 /* vec2.cc in Sources */,
+				7E6C26DCE379D13E5F33E1F2 /* vec3.cc in Sources */,
+				C3FC44402BEC7BE2E51E9096 /* vec4.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22E377866140156B160F514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D517C26A88F570D260FDC7F /* vec2.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C739D52B9A3FF4C352749AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D2FC171CA375A1F203570F /* vec3.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32D7922936DB2409C42D8CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A9C10ACBC56FF331A9908D8 /* libwebgl-math-vec2-osx */;
+			targetProxy = ADC1897DE3C930F09D1BBADB /* PBXContainerItemProxy */;
+		};
+		6129F9B2B079B982331709CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E9F1D517B2941EB3A122D2 /* libwebgl-math-vec3-osx */;
+			targetProxy = 23BD63DEE27E76DD72C6E854 /* PBXContainerItemProxy */;
+		};
+		73CE8D3CD1D7B82BB13DB888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB0592515BB910B25A10FE9 /* libwebgl-math-vec4-osx */;
+			targetProxy = E957EF938FBCE97CB7583D0F /* PBXContainerItemProxy */;
+		};
+		7D5FF371CF493CD61CA7A83F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA597BA17BEE305CFD1A2298 /* libwebgl-math-osx */;
+			targetProxy = 5D59526D609AE097A179E9CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CF909BC3086EED30106C997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					_DEBUG,
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Debug;
+		};
+		15C6C15F42C1BCE52A196E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SDKROOT = macosx;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		5AB61D7AB701A67E09E0CDA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		746B91E8D8BC6298ED5B83E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					"NDEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-vec4-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Release;
+		};
+		76B363AC97FA2E7EA24A65FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					"NDEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-vec2-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Release;
+		};
+		7EA639275D097C4DA13314D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					_DEBUG,
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-vec4-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Debug;
+		};
+		841FD0AF4BAE951186AB5341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					"NDEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-vec3-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Release;
+		};
+		97CF39655731F662771FC0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SDKROOT = macosx;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		CE5E8D3DAE990F9A7EF9C718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		D53D91FCA8F89EA058B85023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					_DEBUG,
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-vec2-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Debug;
+		};
+		D68978EDD6F936A74F24201A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					_DEBUG,
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-vec3-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Debug;
+		};
+		D69A2EA2190A052354C71559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__POSIX__,
+					_LARGEFILE_SOURCE,
+					_LARGEFILE64_SOURCE,
+					"_FILE_OFFSET_BITS=64",
+					"_DARWIN_USE_64_BIT_INODE=1",
+					"NODE_WANT_INTERNALS=1",
+					"NDEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				HEADER_SEARCH_PATHS = (
+					../nan,
+					../../node/src,
+					../../node/deps/uv/include,
+					../../node/deps/v8/include,
+					"../../node/deps/debugger-agent/include",
+					../../node/deps/cares/include,
+				);
+				"OTHER_CFLAGS[arch=arm64]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7]" = "-marm";
+				"OTHER_CFLAGS[arch=armv7s]" = "-marm";
+				PREBINDING = NO;
+				PRODUCT_NAME = "webgl-math-osx";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-W",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		103BA40A5A380EACDD073A8F /* Build configuration list for PBXNativeTarget "libwebgl-math-vec4-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA639275D097C4DA13314D2 /* Debug */,
+				746B91E8D8BC6298ED5B83E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		4B1DDAA79622EB288498D715 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB61D7AB701A67E09E0CDA5 /* Debug */,
+				CE5E8D3DAE990F9A7EF9C718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		54A469FCA4B695B4A7B1A3AC /* Build configuration list for PBXNativeTarget "libwebgl-math-vec3-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D68978EDD6F936A74F24201A /* Debug */,
+				841FD0AF4BAE951186AB5341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		63B8BB4FC18AB11BC50B7184 /* Build configuration list for PBXProject "webgl-math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C6C15F42C1BCE52A196E64 /* Debug */,
+				97CF39655731F662771FC0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		70FE0748FE640A5612D2465F /* Build configuration list for PBXNativeTarget "libwebgl-math-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CF909BC3086EED30106C997 /* Debug */,
+				D69A2EA2190A052354C71559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		A8196820FF1E2B817EC8E176 /* Build configuration list for PBXNativeTarget "libwebgl-math-vec2-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53D91FCA8F89EA058B85023 /* Debug */,
+				76B363AC97FA2E7EA24A65FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95D057C8A3B8FE09EF710266 /* Project object */;
+}
