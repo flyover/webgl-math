@@ -12,7 +12,7 @@ var assert = function (c)
 	}
 }
 
-var vec2 = require('webgl-math/vec2');
+var vec2 = require('@flyover/webgl-math/vec2');
 
 var count = 1024*128;
 
@@ -72,7 +72,7 @@ vec2.array.forEach(out, function (value, index, array)
 
 /// vec2
 
-var vec2 = require('webgl-math/vec2');
+var vec2 = require('@flyover/webgl-math/vec2');
 
 for (var i = 0; i < 100; ++i)
 {
@@ -96,7 +96,7 @@ for (var i = 0; i < 100; ++i)
 
 /// vec3
 
-var vec3 = require('webgl-math/vec3');
+var vec3 = require('@flyover/webgl-math/vec3');
 
 for (var i = 0; i < 100; ++i)
 {
@@ -120,7 +120,7 @@ for (var i = 0; i < 100; ++i)
 
 /// vec4
 
-var vec4 = require('webgl-math/vec4');
+var vec4 = require('@flyover/webgl-math/vec4');
 
 for (var i = 0; i < 100; ++i)
 {
@@ -144,7 +144,7 @@ for (var i = 0; i < 100; ++i)
 
 /// quat
 
-var quat = require('webgl-math/quat');
+var quat = require('@flyover/webgl-math/quat');
 
 for (var i = 0; i < 100; ++i)
 {
@@ -168,7 +168,7 @@ for (var i = 0; i < 100; ++i)
 
 /// mat2
 
-var mat2 = require('webgl-math/mat2');
+var mat2 = require('@flyover/webgl-math/mat2');
 
 for (var i = 0; i < 100; ++i)
 {
@@ -192,7 +192,7 @@ for (var i = 0; i < 100; ++i)
 
 /// mat3
 
-var mat3 = require('webgl-math/mat3');
+var mat3 = require('@flyover/webgl-math/mat3');
 
 for (var i = 0; i < 100; ++i)
 {
@@ -216,7 +216,7 @@ for (var i = 0; i < 100; ++i)
 
 /// mat4
 
-var mat4 = require('webgl-math/mat4');
+var mat4 = require('@flyover/webgl-math/mat4');
 
 for (var i = 0; i < 100; ++i)
 {
