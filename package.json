@@ -18,7 +18,7 @@
   "author": "Flyover Games, LLC",
   "license": "MIT",
   "dependencies": {
-    "nan": "1.x"
+    "nan": "2.x"
   },
   "bugs": {
     "url": "https://github.com/flyover/webgl-math/issues"
