@@ -322,11 +322,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
@@ -386,11 +386,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
@@ -431,11 +431,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
@@ -477,11 +477,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
@@ -522,11 +522,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
@@ -587,11 +587,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
@@ -633,11 +633,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
@@ -678,11 +678,11 @@
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				HEADER_SEARCH_PATHS = (
 					../../nan,
-					../../../node/src,
-					../../../node/deps/uv/include,
-					../../../node/deps/v8/include,
-					"../../../node/deps/debugger-agent/include",
-					../../../node/deps/cares/include,
+					"../../../node-v0.x-archive/src",
+					"../../../node-v0.x-archive/deps/uv/include",
+					"../../../node-v0.x-archive/deps/v8/include",
+					"../../../node-v0.x-archive/deps/debugger-agent/include",
+					"../../../node-v0.x-archive/deps/cares/include",
 				);
 				"OTHER_CFLAGS[arch=arm64]" = "-marm";
 				"OTHER_CFLAGS[arch=armv7]" = "-marm";
