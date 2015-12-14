@@ -4,10 +4,8 @@
 
 var epsilon = 1e-3;
 
-var assert = function (c)
-{
-	if (!c)
-	{
+var assert = function (c) {
+	if (!c) {
 		throw new Error();
 	}
 }
@@ -22,8 +20,7 @@ var vel = vec2.array.make(count, vec2.random);
 var dt = 1 / 60;
 
 var t1 = process.hrtime();
-vec2.array.forEach(out, function (value, index, array)
-{
+vec2.array.forEach(out, function (value, index, array) {
 	// value : vec2.array.valueAt(array, index)
 	// array : out
 	vec2.muls_add(value, vec2.array.valueAt(pos, index), vec2.array.valueAt(vel, index), dt);
@@ -32,27 +29,31 @@ t1 = process.hrtime(t1);
 console.log("vec2.array.forEach(vec2.muls_add)", t1);
 
 var tmp = vec2.array.clone(out);
-assert(vec2.array.eq(tmp, out));
+assert(vec2.array.eq(tmp, out, epsilon));
 
 var t2 = process.hrtime();
 vec2.array.muls_add(out, pos, vel, dt);
 t2 = process.hrtime(t2);
 console.log("vec2.array.muls_add", t2, (t1[1]/t2[1]).toFixed(2), "times faster");
-
 assert(vec2.array.eq(tmp, out, epsilon));
 
-var node_vec2 = require('./build/Release/vec2');
-var t3 = process.hrtime();
-node_vec2.array.muls_add(out, pos, vel, dt);
-t3 = process.hrtime(t3);
-console.log("node_vec2.array.muls_add", t3, (t1[1]/t3[1]).toFixed(2), "times faster");
+if (vec2.native) {
+	var t2 = process.hrtime();
+	vec2.script.array.muls_add(out, pos, vel, dt);
+	t2 = process.hrtime(t2);
+	console.log("vec2.script.array.muls_add", t2, (t1[1]/t2[1]).toFixed(2), "times faster");
+	assert(vec2.array.eq(tmp, out, epsilon));
 
-assert(vec2.array.eq(tmp, out, epsilon));
+	var t3 = process.hrtime();
+	vec2.native.array.muls_add(out, pos, vel, dt);
+	t3 = process.hrtime(t3);
+	console.log("vec2.native.array.muls_add", t3, (t1[1]/t3[1]).toFixed(2), "times faster");
+	assert(vec2.array.eq(tmp, out, epsilon));
+}
 
 //vec2.array.forEach(out, function (value, index) { console.log(index, value[0], value[1]); });
 
-out = vec2.array.remake(out, count * 2, function (value, index)
-{
+out = vec2.array.remake(out, count * 2, function (value, index) {
 	if (index === count) { value[0] = 42.0; }
 });
 
@@ -65,8 +66,7 @@ out = vec2.array.remake(out, count / 2);
 
 assert(vec2.eq(vec2.array.valueAt(tmp, 0), vec2.array.valueAt(out, 0)));
 
-vec2.array.forEach(out, function (value, index, array)
-{
+vec2.array.forEach(out, function (value, index, array) {
 	assert(vec2.array.indexOf(array, value) === index);
 });
 
@@ -74,8 +74,8 @@ vec2.array.forEach(out, function (value, index, array)
 
 var vec2 = require('@flyover/webgl-math/vec2');
 
-for (var i = 0; i < 100; ++i)
-{
+for (var i = 0; i < 100; ++i) {
+
 	var a = vec2.random(vec2.make());
 	var b = vec2.random(vec2.make());
 	var c = vec2.random(vec2.make());
@@ -98,8 +98,8 @@ for (var i = 0; i < 100; ++i)
 
 var vec3 = require('@flyover/webgl-math/vec3');
 
-for (var i = 0; i < 100; ++i)
-{
+for (var i = 0; i < 100; ++i) {
+
 	var a = vec3.random(vec3.make());
 	var b = vec3.random(vec3.make());
 	var c = vec3.random(vec3.make());
@@ -122,8 +122,8 @@ for (var i = 0; i < 100; ++i)
 
 var vec4 = require('@flyover/webgl-math/vec4');
 
-for (var i = 0; i < 100; ++i)
-{
+for (var i = 0; i < 100; ++i) {
+
 	var a = vec4.random(vec4.make());
 	var b = vec4.random(vec4.make());
 	var c = vec4.random(vec4.make());
@@ -146,8 +146,8 @@ for (var i = 0; i < 100; ++i)
 
 var quat = require('@flyover/webgl-math/quat');
 
-for (var i = 0; i < 100; ++i)
-{
+for (var i = 0; i < 100; ++i) {
+
 	var a = quat.random(quat.make());
 	var b = quat.random(quat.make());
 	var c = quat.random(quat.make());
@@ -170,8 +170,8 @@ for (var i = 0; i < 100; ++i)
 
 var mat2 = require('@flyover/webgl-math/mat2');
 
-for (var i = 0; i < 100; ++i)
-{
+for (var i = 0; i < 100; ++i) {
+
 	var a = mat2.random(mat2.make());
 	var b = mat2.random(mat2.make());
 	var c = mat2.random(mat2.make());
@@ -194,8 +194,8 @@ for (var i = 0; i < 100; ++i)
 
 var mat3 = require('@flyover/webgl-math/mat3');
 
-for (var i = 0; i < 100; ++i)
-{
+for (var i = 0; i < 100; ++i) {
+
 	var a = mat3.random_space(mat3.make());
 	var b = mat3.random_space(mat3.make());
 	var c = mat3.random_space(mat3.make());
@@ -218,8 +218,8 @@ for (var i = 0; i < 100; ++i)
 
 var mat4 = require('@flyover/webgl-math/mat4');
 
-for (var i = 0; i < 100; ++i)
-{
+for (var i = 0; i < 100; ++i) {
+
 	var a = mat4.random_space(mat4.make());
 	var b = mat4.random_space(mat4.make());
 	var c = mat4.random_space(mat4.make());
@@ -237,4 +237,3 @@ for (var i = 0; i < 100; ++i)
 	var tbc = mat4.extract(mat4.make(), abc, a);
 	assert(mat4.eq(bc, tbc, epsilon));
 }
-

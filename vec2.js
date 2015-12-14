@@ -24,17 +24,17 @@
  * Copyright (c) Flyover Games, LLC
  */
 
-var node_vec2 = null;
-try { node_vec2 = node_vec2 || require('./build/Release/vec2'); } catch (err) {}
-try { node_vec2 = node_vec2 || process._linkedBinding('node_vec2'); } catch (err) {}
-try { node_vec2 = node_vec2 || process.binding('node_vec2'); } catch (err) {}
-module.exports = node_vec2;
-
 /**
  * @export 
  * @typedef {Float32Array}
  */
 var vec2 = {};
+
+vec2.script = {};
+
+try { vec2.native = vec2.native || require('./build/Release/vec2'); } catch (err) {}
+try { vec2.native = vec2.native || process._linkedBinding('node_vec2'); } catch (err) {}
+try { vec2.native = vec2.native || process.binding('node_vec2'); } catch (err) {}
 
 /** 
  * @export 
@@ -562,26 +562,18 @@ vec2.muls_add = function (out, a, b, s)
 	return out;
 }
 
-/** 
- * out = a + ((b - a) * t) 
- * @export 
- * @return {vec2}
- * @param {vec2} out
- * @param {vec2} a
- * @param {vec2} b
- * @param {number} t
- */
-vec2.lerp = function (out, a, b, t)
+if (vec2.native)
 {
-	out[0] = a[0] + (t * (b[0] - a[0]));
-	out[1] = a[1] + (t * (b[1] - a[1]));
-	return out;
+	vec2.script.muls_add = vec2.muls_add;
+	vec2.muls_add = vec2.native.muls_add;
 }
 
 /**
  * @typedef {Float32Array}
  */
 vec2.array = {};
+
+vec2.script.array = {};
 
 /**
  * @export 
@@ -607,6 +599,16 @@ vec2.array.make = function (count, init)
 vec2.array.clone = function (array)
 {
 	return new Float32Array(array);
+}
+
+/**
+ * @export 
+ * @return {number}
+ * @param {vec2.array} array 
+ */
+vec2.array.count = function (array)
+{
+	return array.length / vec2.ELEMENTS_PER_OBJECT;
 }
 
 /**
@@ -646,12 +648,28 @@ vec2.array.remake = function (array, count, init)
 
 /**
  * @export 
- * @return {number}
+ * @return {vec2.array} 
  * @param {vec2.array} array 
+ * @param {number=} start 
+ * @param {number=} count 
  */
-vec2.array.count = function (array)
+vec2.array.view = function (array, start, count)
 {
-	return array.length / vec2.ELEMENTS_PER_OBJECT;
+	if (typeof(start) === 'number')
+	{
+		if (typeof(count) === 'number')
+		{
+			return new Float32Array(array.subarray(start * vec2.ELEMENTS_PER_OBJECT, (start + count) * vec2.ELEMENTS_PER_OBJECT));
+		}
+		else
+		{
+			return new Float32Array(array.subarray(start * vec2.ELEMENTS_PER_OBJECT));
+		}
+	}
+	else
+	{
+		return new Float32Array(array);
+	}
 }
 
 /**
@@ -748,6 +766,12 @@ vec2.array.eq = function (a, b, epsilon)
 	return true;
 }
 
+if (vec2.native)
+{
+	vec2.script.array.eq = vec2.array.eq;
+	vec2.array.eq = vec2.native.array.eq;
+}
+
 /**
  * @export 
  * @return {boolean} 
@@ -771,42 +795,17 @@ vec2.array.neq = function (a, b, epsilon)
  */
 vec2.array.muls_add = function (out, a, b, s)
 {
-//	if (node_vec2)
-//	{
-//		return node_vec2.array.muls_add(out, a, b, s);
-//	}
-
 	for (var i = 0, n = out.length; i < n; ++i)
 	{
 		out[i] = a[i] + (s * b[i]);
 	}
 	return out;
-
-//	vec2.array.forEach(out, function (value, index, array)
-//	{
-//		// value : vec2.array.valueAt(array, index)
-//		// array : out
-//		vec2.muls_add(value, vec2.array.valueAt(a, index), vec2.array.valueAt(b, index), s);
-//	});
-//	return out;
 }
 
-/** 
- * out = a + ((b - a) * t) 
- * @export 
- * @return {vec2.array}
- * @param {vec2.array} out
- * @param {vec2.array} a
- * @param {vec2.array} b
- * @param {number} t
- */
-vec2.array.lerp = function (out, a, b, t)
+if (vec2.native)
 {
-	for (var i = 0, n = out.length; i < n; ++i)
-	{
-		out[i] = a[i] + (t * (b[i] - a[i]));
-	}
-	return out;
+	vec2.script.array.muls_add = vec2.array.muls_add;
+	vec2.array.muls_add = vec2.native.array.muls_add;
 }
 
 return vec2; });
