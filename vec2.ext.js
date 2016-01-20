@@ -3,63 +3,63 @@
  */
 
 /**
- * @export 
+ * @export
  * @typedef {Float32Array}
  */
 var vec2;
 
-/** 
- * @export 
- * @const 
+/**
+ * @export
+ * @const
  * @type {number}
  */
 vec2.ELEMENTS_PER_OBJECT;
 
-/** 
- * @export 
+/**
+ * @export
  * @return {vec2}
  * @param {number=} x
  * @param {number=} y
  */
 vec2.make;
 
-/** 
- * @export 
- * @const 
+/**
+ * @export
+ * @const
  * @type {vec2}
  */
 vec2.ZERO;
 
-/** 
- * @export 
- * @const 
+/**
+ * @export
+ * @const
  * @type {vec2}
  */
 vec2.UNIT;
 
-/** 
- * @export 
- * @const 
+/**
+ * @export
+ * @const
  * @type {vec2}
  */
 vec2.UNITX;
 
-/** 
- * @export 
- * @const 
+/**
+ * @export
+ * @const
  * @type {vec2}
  */
 vec2.UNITY;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} v
  */
 vec2.clone;
 
 /**
- * @export 
+ * @export
  * @return {string}
  * @param {vec2} obj
  * @param {string=} out
@@ -67,7 +67,7 @@ vec2.clone;
 vec2.stringify;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
  * @param {string} str
  * @param {vec2=} out
@@ -75,60 +75,60 @@ vec2.stringify;
 vec2.objectify;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
- * @param {vec2} v 
+ * @param {vec2} v
  */
 vec2.zero;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
- * @param {vec2} v 
+ * @param {vec2} v
  */
 vec2.random;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
- * @param {vec2} v 
- * @param {number} lo 
- * @param {number} hi 
+ * @param {vec2} v
+ * @param {number} lo
+ * @param {number} hi
  */
 vec2.random_range;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
- * @param {vec2} v 
+ * @param {vec2} v
  */
 vec2.random_axis;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
- * @param {vec2} v 
+ * @param {vec2} v
  */
 vec2.drop;
 
 /**
- * @export 
+ * @export
  * @return {Array.<number>}
- * @param {vec2} v 
- * @param {Array.<number>} json 
+ * @param {vec2} v
+ * @param {Array.<number>} json
  */
 vec2.save;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
- * @param {vec2} v 
- * @param {Array.<number>} json 
+ * @param {vec2} v
+ * @param {Array.<number>} json
  */
 vec2.load;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} v
  * @param {number} x
@@ -137,7 +137,7 @@ vec2.load;
 vec2.set;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -145,25 +145,25 @@ vec2.set;
 vec2.copy;
 
 /**
- * @export 
- * @return {boolean} 
- * @param {vec2} a 
- * @param {vec2} b 
- * @param {number=} epsilon 
+ * @export
+ * @return {boolean}
+ * @param {vec2} a
+ * @param {vec2} b
+ * @param {number=} epsilon
  */
 vec2.eq;
 
 /**
- * @export 
- * @return {boolean} 
- * @param {vec2} a 
- * @param {vec2} b 
- * @param {number=} epsilon 
+ * @export
+ * @return {boolean}
+ * @param {vec2} a
+ * @param {vec2} b
+ * @param {number=} epsilon
  */
 vec2.neq;
 
 /**
- * @export 
+ * @export
  * @return {number}
  * @param {vec2} a
  * @param {vec2} b
@@ -171,25 +171,25 @@ vec2.neq;
 vec2.distance;
 
 /**
- * @export 
+ * @export
  * @return {number}
  * @param {vec2} a
  * @param {vec2} b
  */
 vec2.dot;
 
-/** 
- * [ a.x, a.y, 0 ] x [ b.x, b.y, 0 ] : z 
- * @export 
+/**
+ * [ a.x, a.y, 0 ] x [ b.x, b.y, 0 ] : z
+ * @export
  * @return {number}
  * @param {vec2} a
  * @param {vec2} b
  */
 vec2.cross;
 
-/** 
+/**
  * out = [ v.x, v.y, 0 ] x [ 0, 0, 1 ] : [ x, y ]
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -198,28 +198,28 @@ vec2.cross;
 vec2.perp;
 
 /**
- * @export 
+ * @export
  * @return {number}
  * @param {vec2} v
  */
 vec2.len;
 
 /**
- * @export 
+ * @export
  * @return {number}
  * @param {vec2} v
  */
 vec2.invlen;
 
 /**
- * @export 
+ * @export
  * @return {number}
  * @param {vec2} v
  */
 vec2.sqrlen;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -228,7 +228,7 @@ vec2.norm;
 
 /**
  * out = -v
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -237,7 +237,7 @@ vec2.neg;
 
 /**
  * out = 1.0 / v
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -246,7 +246,7 @@ vec2.inv;
 
 /**
  * out = min(a, b)
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -256,7 +256,7 @@ vec2.min;
 
 /**
  * out = max(a, b)
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -266,7 +266,7 @@ vec2.max;
 
 /**
  * out = a + b
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -276,7 +276,7 @@ vec2.add;
 
 /**
  * out = v + s
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -286,7 +286,7 @@ vec2.adds;
 
 /**
  * out = a - b
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -296,7 +296,7 @@ vec2.sub;
 
 /**
  * out = v - s
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -306,7 +306,7 @@ vec2.subs;
 
 /**
  * out = a * b
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -316,7 +316,7 @@ vec2.mul;
 
 /**
  * out = v * s
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} v
@@ -326,7 +326,7 @@ vec2.muls;
 
 /**
  * out = a / b
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -335,7 +335,7 @@ vec2.muls;
 vec2.div;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -344,7 +344,7 @@ vec2.div;
 vec2.combine;
 
 /**
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -354,7 +354,7 @@ vec2.extract;
 
 /**
  * out = a + (b * s)
- * @export 
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -363,9 +363,9 @@ vec2.extract;
  */
 vec2.muls_add;
 
-/** 
- * out = a + ((b - a) * t) 
- * @export 
+/**
+ * out = a + ((b - a) * t)
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -380,7 +380,7 @@ vec2.lerp;
 vec2.array;
 
 /**
- * @export 
+ * @export
  * @return {vec2.array}
  * @param {number} count
  * @param {function(vec2,number,vec2.array):void=} init
@@ -388,75 +388,75 @@ vec2.array;
 vec2.array.make;
 
 /**
- * @export 
+ * @export
  * @return {vec2.array}
  * @param {vec2.array} array
  */
 vec2.array.clone;
 
 /**
- * @export 
+ * @export
  * @return {vec2.array}
- * @param {vec2.array} array 
- * @param {number} count 
+ * @param {vec2.array} array
+ * @param {number} count
  * @param {function(vec2,number,vec2.array):void=} init
  */
 vec2.array.remake;
 
 /**
- * @export 
+ * @export
  * @return {number}
- * @param {vec2.array} array 
+ * @param {vec2.array} array
  */
 vec2.array.count;
 
 /**
- * @export 
- * @return {vec2} 
- * @param {vec2.array} array 
- * @param {number} index 
+ * @export
+ * @return {vec2}
+ * @param {vec2.array} array
+ * @param {number} index
  */
 vec2.array.valueAt;
 
 /**
- * @export 
- * @return {number} 
- * @param {vec2.array} array 
- * @param {vec2} value 
+ * @export
+ * @return {number}
+ * @param {vec2.array} array
+ * @param {vec2} value
  */
 vec2.array.indexOf;
 
 /**
- * @export 
- * @return {void} 
- * @param {vec2.array} array 
+ * @export
+ * @return {void}
+ * @param {vec2.array} array
  * @param {function(vec2,number,vec2.array):void} callback
- * @param {number=} start 
- * @param {number=} count 
+ * @param {number=} start
+ * @param {number=} count
  */
 vec2.array.forEach;
 
 /**
- * @export 
- * @return {boolean} 
- * @param {vec2.array} a 
- * @param {vec2.array} b 
- * @param {number=} epsilon 
+ * @export
+ * @return {boolean}
+ * @param {vec2.array} a
+ * @param {vec2.array} b
+ * @param {number=} epsilon
  */
 vec2.array.eq;
 
 /**
- * @export 
- * @return {boolean} 
- * @param {vec2.array} a 
- * @param {vec2.array} b 
- * @param {number=} epsilon 
+ * @export
+ * @return {boolean}
+ * @param {vec2.array} a
+ * @param {vec2.array} b
+ * @param {number=} epsilon
  */
 vec2.array.neq;
 
 /**
  * out = a + (b * s)
- * @export 
+ * @export
  * @return {vec2.array}
  * @param {vec2.array} out
  * @param {vec2.array} a
@@ -465,9 +465,9 @@ vec2.array.neq;
  */
 vec2.array.muls_add;
 
-/** 
- * out = a + ((b - a) * t) 
- * @export 
+/**
+ * out = a + ((b - a) * t)
+ * @export
  * @return {vec2}
  * @param {vec2} out
  * @param {vec2} a
@@ -483,14 +483,14 @@ vec2.array.lerp;
  */
 var bvec2;
 
-/** 
- * @const 
+/**
+ * @const
  * @type {number}
  */
 bvec2.ELEMENTS_PER_OBJECT;
 
 /**
- * @export 
+ * @export
  * @return {bvec2}
  * @param {boolean=} x
  * @param {boolean=} y
@@ -504,14 +504,14 @@ bvec2.make;
  */
 var ivec2;
 
-/** 
- * @const 
+/**
+ * @const
  * @type {number}
  */
 ivec2.ELEMENTS_PER_OBJECT;
 
 /**
- * @export 
+ * @export
  * @return {ivec2}
  * @param {number=} x
  * @param {number=} y
